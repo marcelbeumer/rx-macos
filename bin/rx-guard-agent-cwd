@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Guard: refuse to run agent sandbox/container tools from $HOME or any ancestor of it.
+[[ -n "${RX_NO_GUARD:-}" ]] && return 0
+cwd="$(pwd -P)"
+home="$(cd "$HOME" && pwd -P)"
+cwd="${cwd%/}"   # strip trailing slash; root "/" is unaffected
+if [[ "$cwd" == "$home" || "$cwd" == "/" || "$home" == "$cwd"/* ]]; then
+  echo "ERROR: refusing to run from \$HOME or an ancestor of it (cwd=$cwd)" >&2
+  echo "       set RX_NO_GUARD=1 to bypass" >&2
+  exit 1
+fi

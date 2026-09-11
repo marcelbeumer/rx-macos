@@ -1,0 +1,5 @@
+[tools]
+herdr = "latest"
+npm = "latest"
+opencode = "latest"
+pi = "latest"

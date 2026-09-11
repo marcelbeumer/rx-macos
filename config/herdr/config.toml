@@ -1,0 +1,43 @@
+onboarding = false
+[keys]
+prefix = "ctrl+a"
+
+# last pane (tmux prefix-;)
+last_pane = "prefix+;"
+
+# jump to tab 1-9 (tmux prefix-<num>)
+switch_tab = "prefix+1..9"
+
+# jump to workspace 1-9
+switch_workspace = "prefix+shift+1..9"
+
+# pane navigation with arrows (tmux prefix+arrow)
+focus_pane_left  = "prefix+left"
+focus_pane_down  = "prefix+down"
+focus_pane_up    = "prefix+up"
+focus_pane_right = "prefix+right"
+
+# splits (tmux prefix-| and prefix--)
+split_vertical   = "prefix+|"
+split_horizontal = "prefix+-"
+
+# reload config (tmux prefix-r)
+reload_config = "prefix+r"
+
+# previous/next tab, no prefix (tmux M-Left / M-Right)
+previous_tab = "alt+left"
+next_tab     = "alt+right"
+
+# move tab, no prefix (tmux M-S-Left / M-S-Right)
+move_tab_previous = "alt+shift+left"
+move_tab_next     = "alt+shift+right"
+
+[theme]
+name = "vesper"
+auto_switch = false
+
+[ui]
+pane_gaps = true
+pane_outer_borders = true
+pane_scrollbars = false
+sidebar_collapsed_mode = "hidden"

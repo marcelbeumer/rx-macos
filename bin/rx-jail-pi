@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+source "$(dirname "$(readlink -f "$0")")/rx-guard-agent-cwd"
+if [[ "${HERDR_ENV:-}" == "1" ]]; then
+  herdr pane report-metadata "${HERDR_PANE_ID:-}" --source "rx:jail" \
+    --display-agent "pi (jail)" 2>/dev/null || true
+  HERDR_AGENT=pi exec ai-jail pi "$@"
+else
+  exec ai-jail pi "$@"
+fi

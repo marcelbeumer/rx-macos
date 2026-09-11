@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+unlink_agent() {
+  local dst="$1"
+  if [[ -L "$dst" ]]; then
+    rm "$dst"
+    echo "unlinked $dst"
+  else
+    echo "not linked: $dst"
+  fi
+}
+
+unlink_agent "$HOME/.config/opencode"
+unlink_agent "$HOME/.pi"

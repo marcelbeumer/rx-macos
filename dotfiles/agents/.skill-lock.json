@@ -1,0 +1,60 @@
+{
+  "version": 3,
+  "skills": {
+    "go": {
+      "source": "spf13/go-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/spf13/go-skills.git",
+      "skillPath": "go/SKILL.md",
+      "skillFolderHash": "9bd0e07b40a65c5a579a3bdf7e24126a5529800a",
+      "installedAt": "2026-09-10T20:58:10.304Z",
+      "updatedAt": "2026-09-10T21:03:40.487Z"
+    },
+    "go-spec-reviewer": {
+      "source": "spf13/go-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/spf13/go-skills.git",
+      "skillPath": "go-spec-reviewer/SKILL.md",
+      "skillFolderHash": "5e5cc532f933f5dbb81ab7f25ee716123c0a0ef0",
+      "installedAt": "2026-09-10T20:58:10.305Z",
+      "updatedAt": "2026-09-10T21:03:40.489Z"
+    },
+    "go-release": {
+      "source": "spf13/go-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/spf13/go-skills.git",
+      "skillPath": "go-release/SKILL.md",
+      "skillFolderHash": "5949fa8fd3268bb94a674cffb3bec66e52bd782a",
+      "installedAt": "2026-09-10T20:58:10.306Z",
+      "updatedAt": "2026-09-10T21:03:40.488Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b",
+      "installedAt": "2026-09-10T21:06:08.054Z",
+      "updatedAt": "2026-09-10T21:06:08.054Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed",
+    "claude-code",
+    "pi"
+  ]
+}
