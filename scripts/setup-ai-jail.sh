@@ -22,6 +22,7 @@ rw_maps = [
   "~/.local/share/rx/agents/opencode:~/.config/opencode",
   "~/.local/share/rx/agents/pi:~/.pi",
   "~/.local/share/opencode",
+  "~/.local/state/opencode/model.json",
   "~/.local/share/rx/agents/config/sandbox/AGENTS.md:~/.config/opencode/AGENTS.md",
   "~/.local/share/rx/agents/config/sandbox/AGENTS.md:~/.pi/agent/AGENTS.md",
 ]

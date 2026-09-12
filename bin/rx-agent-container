@@ -44,6 +44,7 @@ exec "$runtime" run -it --rm \
   -v "$HOME/.local/share/rx/agents/config/sandbox/AGENTS.md:/home/agent/.pi/agent/AGENTS.md" \
   -v "$HOME/.local/share/rx/dotfiles/agents:/home/agent/.agents" \
   -v "$HOME/.local/share/opencode:/home/agent/.local/share/opencode" \
+  -v "$HOME/.local/state/opencode/model.json:/home/agent/.local/state/opencode/model.json" \
   "${extra_mounts[@]}" \
   rx-agent-box \
   "$cmd" "$@"
