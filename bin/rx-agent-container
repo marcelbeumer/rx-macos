@@ -31,6 +31,8 @@ if [[ "${HERDR_ENV:-}" == "1" && ( "$cmd" == "opencode" || "$cmd" == "pi" ) ]]; 
     --display-agent "$cmd (container)" 2>/dev/null || true
 fi
 
+mkdir -p "$HOME/.local/share/opencode" "$HOME/.local/state/opencode"
+
 exec "$runtime" run -it --rm \
   --user agent \
   "${userns_args[@]}" \

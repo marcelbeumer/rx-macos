@@ -27,3 +27,5 @@ rw_maps = [
   "~/.local/share/rx/agents/config/sandbox/AGENTS.md:~/.pi/agent/AGENTS.md",
 ]
 EOF
+
+mkdir -p "$HOME/.local/share/opencode" "$HOME/.local/state/opencode"
