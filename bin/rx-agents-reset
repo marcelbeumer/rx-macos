@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# opencode: conversation history + transient state
+rm -f  "$HOME/.local/share/opencode/opencode.db"* \
+       "$HOME/.local/share/opencode/log/opencode.log"
+rm -rf "$HOME/.local/share/opencode/snapshot" \
+       "$HOME/.local/share/opencode/tool-output" \
+       "$HOME/.local/state/opencode"
+
+# pi: session history only
+rm -rf "$HOME/.pi/agent/sessions"
+
+# recreate mount points (user-owned, empty) so jail/container binds resolve
+mkdir -p "$HOME/.local/share/opencode" "$HOME/.local/state/opencode"
