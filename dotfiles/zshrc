@@ -22,6 +22,7 @@ alias tf='terraform'
 alias ports='sudo lsof -P -i TCP -s TCP:LISTEN'
 alias k='kubectl'
 alias ll='ls -allh'
+alias chat='cd ~/dev/chat && rx-jail-opencode --agent chat'
 alias startdev="limactl start dev0"
 alias stopdev="limactl stop dev0"
 alias dev="limactl shell --workdir . dev0"

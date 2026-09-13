@@ -38,13 +38,13 @@ exec "$runtime" run -it --rm \
   -v "$(pwd)":/workspace \
   -v "$HOME/g/allow:/home/agent/g/allow" \
   -v "$HOME/g/ask:/home/agent/g/ask" \
+  -v "$HOME/.local/share/opencode:/home/agent/.local/share/opencode" \
+  -v "$HOME/.local/state/opencode:/home/agent/.local/state/opencode" \
   -v "$HOME/.local/share/rx/agents/opencode:/home/agent/.config/opencode" \
   -v "$HOME/.local/share/rx/agents/pi:/home/agent/.pi" \
   -v "$HOME/.local/share/rx/agents/config/sandbox/AGENTS.md:/home/agent/.config/opencode/AGENTS.md" \
   -v "$HOME/.local/share/rx/agents/config/sandbox/AGENTS.md:/home/agent/.pi/agent/AGENTS.md" \
   -v "$HOME/.local/share/rx/dotfiles/agents:/home/agent/.agents" \
-  -v "$HOME/.local/share/opencode:/home/agent/.local/share/opencode" \
-  -v "$HOME/.local/state/opencode/model.json:/home/agent/.local/state/opencode/model.json" \
   "${extra_mounts[@]}" \
   rx-agent-box \
   "$cmd" "$@"
